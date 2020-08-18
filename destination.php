@@ -28,7 +28,7 @@ $name = $_SERVER['SERVER_NAME'];
 <body id="main-body">
     <?php include 'common/header.php'; ?>
     <div class="banner page-banner transformx">
-        <div id="blockVideo" data-vide-bg=" mp4:<?= $url ?>videos/welcome-vietnam.mp4, ogv:<?= $url ?>images/welcome-vietnam.ogv, webm:<?= $url ?>videos/welcome-vietnam.webm, poster:<?= $url ?>images/homepage-poster.jpg" data-vide-options="posterType: jpg">
+        <div id="blockVideo" data-vide-bg=" mp4:<?= $url ?>videos/welcome-vietnam.mp4, ogv:<?= $url ?>videos/welcome-vietnam.ogv, webm:<?= $url ?>videos/welcome-vietnam.webm, poster:<?= $url ?>images/homepage-poster.jpg" data-vide-options="posterType: jpg">
             <div style="position: absolute; inset: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
                 <video autoplay="" loop="" muted="" style="margin: auto; visibility: visible; opacity: 1; width: 1364px; height: auto;"><source type="video/mp4" src="<?= $url ?>videos/welcome-vietnam.mp4" /><source type="video/webm" src="<?= $url ?>videos/welcome-vietnam.webm" /><source type="video/ogg" src="<?= $url ?>videos/welcome-vietnam.ogv">
                 </video>
