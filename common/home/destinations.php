@@ -1,19 +1,23 @@
 <?php
 $destinations = [
-    ["Cambodia", "/destination?location=cambodia", "cambodia.png"],
-    ["Can Tho", "/destination?location=can-tho", "cantho.png"],
-    ["Hoi An", "/destination?location=hoi-an", "hoian.png"],
-    ["Laos", "/destination?location=laos", "laos.png"],
-    ["Myanmar", "/destination?location=myanmar", "myanmar.png"],
-    ["Thailand", "/destination?location=thailand", "thailand.png"],
-    ["Vietnam", "/destination?location=vietnam", "vietnam.png"],
+    ["Can Tho", "/vietnam-tour/?location=hanoi", "cantho.jpg"],
+    ["Dalat", "/vietnam-tour/?location=hanoi", "dalat.jpg"],
+    ["Hanoi", "/vietnam-tour/?location=hanoi", "hanoi.jpg"],
+    ["Ho Chi Minh", "/vietnam-tour/?location=hanoi", "ho-chi-minh-city.jpg"],
+    ["Hoi An", "/vietnam-tour/?location=hanoi", "hoian.jpg"],
+    ["Hue", "/vietnam-tour/?location=hanoi", "hue.jpg"],
+    ["Nha Trang", "/vietnam-tour/?location=hanoi", "nhatrang.jpg"],
+    ["Phong Nha", "/vietnam-tour/?location=hanoi", "phongnha.jpg"],
+    ["Phu Quoc", "/vietnam-tour/?location=hanoi", "phuquoc.jpg"],
+    ["Sa Pa", "/vietnam-tour/?location=hanoi", "sapa.jpg"],
 ]
 ?>
+
 <div class="destinations-slide">
     <div class="destinations-wrapper">
         <?php foreach ($destinations as $value) { ?>
             <div class="destinations-item">
-                <a class="destinations-link" href="<?= $value[1]?>&name=<?= $value[0]?>">
+                <a class="destinations-link" href="<?= $value[1]?>">
                     <img src="/images/slide/<?= $value[2]?>" alt="">
                     <span class="destinations-title"><?= $value[0]?></span>
                 </a>

@@ -6,26 +6,26 @@
             </a>
         </li>
         <li class="menu-item dropdown categories">
-            <a id="top-category" class="menu-link" href="/our-destinations">
+            <a id="top-category" class="menu-link" href="/destinations">
                 <i class="icon-location2"></i> Destinations
             </a>
             <div class="submenu">
                 <div class="submenu-content">
                     <ul class="submenu-list">
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="/destination?location=vietnam&name=Vietnam">Vietnam</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/vietnam-destination">Vietnam</a>
                         </li>
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="#/destination?location=laos&name=Laos">Laos</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/vietnam-destination">Laos</a>
                         </li>
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="#/destination?location=cambodia&name=Cambodia">Cambodia</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/vietnam-destination">Cambodia</a>
                         </li>
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="#/destination?location=myanmar&name=Myanmar">Myanmar</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/vietnam-destination">Myanmar</a>
                         </li>
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="#/destination?location=thailand&name=Thailand">Thailand</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/vietnam-destination">Thailand</a>
                         </li>
                     </ul>
                     <div class="submenu-desc is-desktop">
@@ -39,21 +39,21 @@
             </div>
         </li>
         <li class="menu-item dropdown categories">
-            <a class="menu-link" href="/travel-styles">
+            <a class="menu-link" href="/my-travel">
                 <i class="icon-location2"></i> Travel styles
             </a>
             <div class="submenu">
                 <div class="submenu-content">
                     <ul class="submenu-list" role="menu">
-                        <li><a class="mega-custom-icon mega-menu-link" href="/tours?day-trip-excursion-c6" title="Day Trip Excursion">Day Trip Excursion</a>
+                        <li><a class="mega-custom-icon mega-menu-link" href="/vietnam-tour" title="Day Trip Excursion">Day Trip Excursion</a>
                         </li>
-                        <li><a class="mega-custom-icon mega-menu-link" href="/tours?walking-and-trekking-c3" title="Walking and Trekking">Walking and Trekking</a>
+                        <li><a class="mega-custom-icon mega-menu-link" href="/vietnam-tour" title="Walking and Trekking">Walking and Trekking</a>
                         </li>
-                        <li><a class="mega-custom-icon mega-menu-link" href="/tours?cultural-and-theme-tours-c408" title="Cultural and Theme Tours">Cultural and Theme Tours</a>
+                        <li><a class="mega-custom-icon mega-menu-link" href="/vietnam-tour" title="Cultural and Theme Tours">Cultural and Theme Tours</a>
                         </li>
-                        <li><a class="mega-custom-icon mega-menu-link" href="/tours?tours-and-sightseeing-c410" title="Tours and Sightseeing">Tours and Sightseeing</a>
+                        <li><a class="mega-custom-icon mega-menu-link" href="/vietnam-tour" title="Tours and Sightseeing">Tours and Sightseeing</a>
                         </li>
-                        <li><a class="mega-custom-icon mega-menu-link" href="/tours?free-and-easy-package-c413" title="Free and Easy Package">Free and Easy Package</a>
+                        <li><a class="mega-custom-icon mega-menu-link" href="/vietnam-tour" title="Free and Easy Package">Free and Easy Package</a>
                         </li>
                     </ul>
                     <div class="submenu-desc is-desktop">
@@ -67,24 +67,24 @@
             </div>
         </li>
         <li class="menu-item dropdown categories">
-            <a class="menu-link" href="/sustainability">
+            <a class="menu-link" href="/">
                 <i class="icon-location2"></i> Sustainability
             </a>
             <div class="submenu">
                 <div class="submenu-content">
                     <ul class="submenu-list">
                         <li>
-                            <a class="mega-custom-icon mega-menu-link" href="#/sustainability-policy/">Our Sustainability Policy</a>
+                            <a class="mega-custom-icon mega-menu-link" href="/">Our Sustainability Policy</a>
                         </li>
                         <li>
-                            <a class="mega-menu-link" href="#/myTravel-ethics-policy/">myTravel Ethics Policy</a>
+                            <a class="mega-menu-link" href="/">myTravel Ethics Policy</a>
                         </li>
                         <li>
-                            <a class="mega-menu-link" href="#/myTravel-childsafe-policy/">myTravel ChildSafe Policy
+                            <a class="mega-menu-link" href="/myTravel-childsafe-policy/">myTravel ChildSafe Policy
                             </a>
                         </li>
                         <li>
-                            <a class="mega-menu-link" href="#/top-faq-elephant-camp-topics/">Top FAQ Elephant Camp Topics</a>
+                            <a class="mega-menu-link" href="/">Top FAQ Elephant Camp Topics</a>
                         </li>
                     </ul>
                     <div class="submenu-desc is-desktop">
@@ -105,13 +105,13 @@
                 <div class="submenu-content">
                     <ul class="submenu-list" role="menu">
                         <li>
-                            <a href="/about-us.html" title="About Us">About Us</a>
+                            <a href="/article" title="About Us">About Us</a>
                         </li>
                         <li>
-                            <a href="/about/company-profile.html" title="Company Profile">Company Profile</a>
+                            <a href="/article" title="Company Profile">Company Profile</a>
                         </li>
                         <li>
-                            <a href="/about/our-team.html" title="Our Team">Our Team</a>
+                            <a href="/article" title="Our Team">Our Team</a>
                         </li>
                     </ul>
                 </div>

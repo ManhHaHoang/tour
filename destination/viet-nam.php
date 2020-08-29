@@ -27,13 +27,12 @@ $name = $_SERVER['SERVER_NAME'];
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body id="main-body">
-    <style media="screen">
-        .about-box {
-            align-items: flex-end ;
-        }
-    </style>
     <?php include 'common/header.php'; ?>
-    <?php include 'common/banner404.php'; ?>
+    <?php include 'common/home/banner.php'; ?>
+    <?php include 'common/home/destinations.php'; ?>
+    <?php include 'common/home/about.php'; ?>
+    <?php include 'common/home/collection.php'; ?>
+    <?php include 'common/home/companions.php'; ?>
     <?php include 'common/home/destinations.php'; ?>
     <?php include 'common/footer.php'; ?>
     <script type="text/javascript">

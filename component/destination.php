@@ -28,7 +28,7 @@ $packages = [
     $i = 1;
     foreach ($packages as $value) { ?>
         <div class="tour-by-destination-item">
-            <a class="tour-by-destination-link" href="<?= $value[1]?>">
+            <a class="tour-by-destination-link" href="<?= $value[1]?>&location=<?= $value[0]?>">
                 <span class="tour-by-destination-images">
                     <img src="/images/destination/<?= $value[2]?>" alt="">
                     <div class="tour-by-destination-time">

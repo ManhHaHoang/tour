@@ -17,11 +17,11 @@ $name = $_SERVER['SERVER_NAME'];
     <meta name="author" content="Manh Ha Hoang">
     <meta name="title" content="myTravel - Vietnam Travel Agency">
     <meta name="description" content="Home to an extensive collection of historical and cultural attractions, Vietnam is undoubtedly one of the most fascinating countries in Southeast Asia!">
-    <link rel="stylesheet" href="assets/css/icon.css?v=<?=$ver?>">
-    <link rel="stylesheet" href="assets/css/layout.css?v=<?=$ver?>">
-    <link rel="stylesheet" href="assets/css/styles.css?v=<?=$ver?>">
-    <link rel="stylesheet" href="assets/css/slide.css?v=<?=$ver?>">
-    <link rel="stylesheet" href="assets/css/responsive.css?v=<?=$ver?>">
+    <link rel="stylesheet" href="/assets/css/icon.css?v=<?=$ver?>">
+    <link rel="stylesheet" href="/assets/css/layout.css?v=<?=$ver?>">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=<?=$ver?>">
+    <link rel="stylesheet" href="/assets/css/slide.css?v=<?=$ver?>">
+    <link rel="stylesheet" href="/assets/css/responsive.css?v=<?=$ver?>">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>

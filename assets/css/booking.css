@@ -1,0 +1,16 @@
+
+.contact-content .flex-box,
+.booking-row .flex-box {
+    justify-content: space-between;
+}
+
+
+.booking-item {
+    width: 49%;
+    margin-top: 15px;
+}
+
+.text-bold {
+    display: block;
+    margin-bottom: 3px;
+}

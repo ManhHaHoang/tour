@@ -1,20 +1,30 @@
-
 RewriteEngine on
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-
-#RewriteRule ^(.*)$ /collection/$1 [L]
-#RewriteRule ^(.*)$ /tour/$1 [L]
-#RewriteRule ^(.*)$ /destinations/$1 [L]
 
 RewriteRule ^404/?$ 404.php
 ErrorDocument 404 /404
+
+<Files *htaccess>
+Deny from all
+</Files>
+
+<files page>
+ForceType application/x-httpd-php
+</files>
+
+<IfModule mod_rewrite.c>
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
 
 </IfModule>

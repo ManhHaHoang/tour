@@ -1,0 +1,150 @@
+.tour-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tour-description-info {
+    width: 100%;
+    color: var(--gray);
+    margin: 25px auto 0;
+    max-width: 80%;
+}
+
+.tour-location,
+.tour-rating {
+    margin: 0 25px;
+}
+
+.tour-description i {
+    font-size: 21px;
+    margin-right: 10px;
+    color: var(--primary)
+}
+
+.location {
+    margin: 0 0 7px;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 600;
+    color: var(--primary)
+}
+
+.location-name {
+    color: #777;
+}
+
+.tour-description-info .text-center {
+    color: var(--black);
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0
+}
+
+.book-now {
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main-tour-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+    z-index: 8;
+}
+
+.right-tour-detail {
+    width: 270px;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.left-tour-detail {
+    width: calc(100% - 270px);
+    padding-right: 45px;
+}
+
+.price_table {
+    width: 100%;
+}
+
+.main-tour-detail table {
+    border-collapse: collapse;
+}
+
+.price_table th {
+    background-color: var(--lt);
+    padding: 3px 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.margin-bottom-30 br {
+
+}
+
+.margin-bottom-30 br::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+}
+
+.price_table td {
+    padding: 3px 6px;
+    border: 1px solid var(--lt);
+    font-size: 13px;
+}
+
+.price_table .td-book {
+    width: 140px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pack-col {
+    width: 90px;
+}
+
+.td-book .book-now {
+    font-size: 11px;
+    padding: 7px 10px;
+}
+
+.d-block {
+    margin-right: 5px;
+}
+
+.best-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.best-right .best-right-img {
+    width: 120px;
+    height: 70px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.right-best {
+    width: calc(100% - 120px);
+    padding-left: 15px;
+}
+
+.right-best h4 {
+    margin: 0 0 7px;
+    font-size: 14px;
+    font-weight: 400;
+}

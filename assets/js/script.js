@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    var lastScrollTop = 0;
-    $(window).scroll(function(event){
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            $('.tzheader').addClass('header-hide header-background');
-            $('.tzheader').removeClass('header-show header-background');
-        } else {
-            $('.tzheader').addClass('header-show header-background');
-            $('.tzheader').removeClass('header-hide header-background');
-        }
-        lastScrollTop = st;
-    });
+    // var lastScrollTop = 0;
+    // $(window).scroll(function(event){
+    //     var st = $(this).scrollTop();
+    //     if (st > lastScrollTop){
+    //         $('.tzheader').addClass('header-hide header-background');
+    //         $('.tzheader').removeClass('header-show header-background');
+    //     } else {
+    //         $('.tzheader').addClass('header-show header-background');
+    //         $('.tzheader').removeClass('header-hide header-background');
+    //     }
+    //     lastScrollTop = st;
+    // });
 
 
 
