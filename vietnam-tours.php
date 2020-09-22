@@ -1,33 +1,26 @@
-<?php
-$ver = time();
-
-// $url  =  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$url = 'http://' . $_SERVER['SERVER_NAME'] . '/';
-$name = $_SERVER['SERVER_NAME'];
-?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
-    <link type="image/x-icon" rel="shortcut icon" sizes="16x16" href="/images/favicon.png?v=<?= $ver ?>"/>
-    <link rel="icon" sizes="16x16 32x32" type="image/png" href="images/favicon.png?v=<?= $ver ?>" >
-    <title>
-        <?php if (key_exists('city', $_GET) && $_GET['city'] == true) {
-            echo $_GET['city'];
-        } ?> - Vietnam Travel Agency</title>
-        <meta name="author" content="Manh Ha Hoang">
-        <meta name="title" content="myTravel - Vietnam Travel Agency">
-        <meta name="description" content="Home to an extensive collection of historical and cultural attractions, Vietnam is undoubtedly one of the most fascinating countries in Southeast Asia!">
-        <link rel="stylesheet" href="/assets/css/icon.css?v=<?=$ver?>">
-        <link rel="stylesheet" href="/assets/css/layout.css?v=<?=$ver?>">
-        <link rel="stylesheet" href="/assets/css/styles.css?v=<?=$ver?>">
-        <link rel="stylesheet" href="/assets/css/slide.css?v=<?=$ver?>">
-        <link rel="stylesheet" href="/assets/css/responsive.css?v=<?=$ver?>">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+<?php include 'common/head.php';?>
+<title> <?php if (key_exists('city', $_GET) && $_GET['city'] == true) { echo $_GET['city'] . ' - '; } ?> Vietnam Travel Agency</title>
+<link rel="stylesheet" href="/assets/css/home.css?v=<?=$ver?>">
+<link rel="stylesheet" href="/assets/css/slide.css?v=<?=$ver?>">
+<link rel="stylesheet" href="/assets/css/responsive.css?v=<?=$ver?>">
     </head>
+    <?php
+    $listCity = [
+        ["Hanoi", "hanoi"],
+        ["Ninh-Binh", "ninhbinh"],
+        ["Da-Nang", "danang"],
+        ["Phu-Quoc-island", "phuquoc"],
+        ["Can-Tho", "cantho"],
+        ["Sapa", "sapa"],
+        ["Nha-Trang", "nhatrang"],
+        ["Mui-Ne", "muine"],
+        ["Hue", "hue"],
+        ["Hoi-An", "hoian"],
+        ["Ho-Chi-Minh-City", "hochiminh"],
+        ["Phong-Nha", "phongnha"],
+        ["Da-Lat", "dalat"],
+    ];
+    ?>
     <body id="main-body">
         <?php include 'common/header.php'; ?>
         <div class="banner page-banner transformx">
@@ -41,8 +34,8 @@ $name = $_SERVER['SERVER_NAME'];
             <div class="breadcrumb-box">
                 <div class="page-title site-w">
                     <?php
-                    if (key_exists('name', $_GET) && $_GET['name'] == true) {
-                        echo $_GET['name'];
+                    if (key_exists('city', $_GET) && $_GET['city'] == true) {
+                        echo $tourName = str_replace('-', ' ',  $_GET['city']);
                     } else { ?>
                         Our Destinations
                     <?php } ?>
@@ -61,7 +54,7 @@ $name = $_SERVER['SERVER_NAME'];
                         <li>
                             <?php
                             if (key_exists('city', $_GET) && $_GET['city'] == true) {
-                                echo $_GET['city'];
+                                echo $tourName = str_replace('-', ' ',  $_GET['city']);
                             } else { ?>
                                 <script> window.location.href = 'vietnam-destination';</script>
                             <?php } ?>
@@ -75,7 +68,7 @@ $name = $_SERVER['SERVER_NAME'];
                 <div id="hanoi-sort" class="city_country active">
                     <h1 class="sort-title">
                         <?php if (key_exists('city', $_GET) && $_GET['city'] == true) {
-                            echo $_GET['city'];
+                            echo $tourName = str_replace('-', ' ',  $_GET['city']);
                         } ?>
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -139,28 +132,11 @@ $name = $_SERVER['SERVER_NAME'];
                             Choose my destination
                         </h3>
                         <div class="dt-sc-destination-sorting">
-                            <?php
-                            $listCity = [
-                                ["Hanoi", "hanoi"],
-                                ["Ninh Binh", "ninhbinh"],
-                                ["Da Nang", "danang"],
-                                ["Phu Quoc island", "phuquoc"],
-                                ["Can Tho", "cantho"],
-                                ["Sapa", "sapa"],
-                                ["Nha Trang", "nhatrang"],
-                                ["Mui Ne", "muine"],
-                                ["Hue", "hue"],
-                                ["Hoi An", "hoian"],
-                                ["Ho Chi Minh City", "hochiminh"],
-                                ["Phong Nha", "phongnha"],
-                                ["Da Lat", "dalat"],
-                            ];
-                            ?>
                             <?php foreach ($listCity as $value) { ?>
                                 <a href="/vietnam-tours?city=<?=$value[0]?>" title="<?=$value[0]?>" rel="nofollow">
                                     <span data-filter="#<?=$value[1]?>" class="sort-item <?= $_GET['city'] == $value[0] ? 'active' : '' ?>">
                                         <small></small>
-                                        <?=$value[0]?>
+                                        <?=  $destinationName = str_replace('-', ' ',  $value[0]); ?>
                                     </span>
                                 </a>
                             <?php } ?>
@@ -220,7 +196,6 @@ $name = $_SERVER['SERVER_NAME'];
                         </div>
                     </div>
                     <div class="tour-right-col">
-
                         <div class="tour-packages">
                             <h2 class="destination-title">
                                 <?php

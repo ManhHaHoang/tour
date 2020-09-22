@@ -1,15 +1,15 @@
 <?php
 $destinations = [
-    ["Can Tho", "/vietnam-tour/?location=hanoi", "cantho.jpg"],
-    ["Dalat", "/vietnam-tour/?location=hanoi", "dalat.jpg"],
-    ["Hanoi", "/vietnam-tour/?location=hanoi", "hanoi.jpg"],
-    ["Ho Chi Minh", "/vietnam-tour/?location=hanoi", "ho-chi-minh-city.jpg"],
-    ["Hoi An", "/vietnam-tour/?location=hanoi", "hoian.jpg"],
-    ["Hue", "/vietnam-tour/?location=hanoi", "hue.jpg"],
-    ["Nha Trang", "/vietnam-tour/?location=hanoi", "nhatrang.jpg"],
-    ["Phong Nha", "/vietnam-tour/?location=hanoi", "phongnha.jpg"],
-    ["Phu Quoc", "/vietnam-tour/?location=hanoi", "phuquoc.jpg"],
-    ["Sa Pa", "/vietnam-tour/?location=hanoi", "sapa.jpg"],
+    ["Can Tho", "/vietnam-tours?city=Can Tho", "cantho.jpg"],
+    ["Da Lat", "/vietnam-tours?city=Da Dat", "dalat.jpg"],
+    ["Hanoi", "/vietnam-tours?city=hanoi", "hanoi.jpg"],
+    ["Ho Chi Minh", "/vietnam-tours?city=Ho Chi Minh", "ho-chi-minh-city.jpg"],
+    ["Hoi An", "/vietnam-tours?city=Hoi An", "hoian.jpg"],
+    ["Hue", "/vietnam-tours?city=Hue", "hue.jpg"],
+    ["Nha Trang", "/vietnam-tours?city=Nha Trang", "nhatrang.jpg"],
+    ["Phong Nha", "/vietnam-tours?city=Phong Nha", "phongnha.jpg"],
+    ["Phu Quoc", "/vietnam-tours?city=Phu Quoc", "phuquoc.jpg"],
+    ["Sa Pa", "/vietnam-tours?city=Sa Pa", "sapa.jpg"],
 ]
 ?>
 
